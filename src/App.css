@@ -1,22 +1,80 @@
 .App {
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
   color: white;
+  background-color: black;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #09d3ac;
+.header h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 45px;
+}
+
+.SearchBox {
+  background-color: grey;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchBox input {
+  margin: 0px 4px;
+}
+
+.FilterOptions {
+  background-color: lightgrey;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FilterOptions > * {
+  margin: 0px 4px;
+}
+
+.FilterOptions label {
+  margin-left: 20px;
+}
+
+.FilterOptions select {
+  height: 25px;
+  text-align: center;
+  padding: 0px 5px;
+}
+
+.ListItem {
+  margin: 0 auto;
+  max-width: 800px;
+  margin-top: 40px;
+}
+
+.Item__data {
+  display: flex;
+  justify-content: left;
+}
+
+.Item__info {
+  max-width: 500px;
+  margin-left: 40px;
+}
+
+.Item__title {
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.Item__title a {
+  text-decoration: none;
+  color: black;
 }
