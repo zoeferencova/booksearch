@@ -18,7 +18,7 @@ export default class ListItem extends React.Component {
 		}
 		const price = this.props.saleInfo.saleability === "FOR_SALE" ? `Price: ${this.props.saleInfo.retailPrice.amount} ${this.props.saleInfo.retailPrice.currencyCode}` : 'Not for sale';
 
-		const image = info.imageLinks.smallThumbnail ? <img src={info.imageLinks.smallThumbnail} alt={info.title} /> : '';
+		const image = info.imageLinks ? <img src={info.imageLinks.smallThumbnail} alt={info.title} /> : '';
 
 		return(
 			<div className="ListItem">
